@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动的实现</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0}
+		.bod{width: 400px;margin: auto;background-color: pink;}
+		.green{background-color: #ccffcc}
+		.pink{background-color: #ffcccc}
+		.blue{background-color: #ccccff}
+		.gray{background-color: #cccccc}
+		.demo11{width: 100px;height: 100px;}
+		.demo12{width: 100px;height: 200px;}
+		.demo21{width: 200px;height: 100px;}
+		.demo22{width: 200px;height: 200px;}
+		.float{float: left;}
+	</style>
+</head>
+<body>
+	<div class="bod">
+		<div>
+			<div class="green demo11 float"></div>
+			<div class="pink demo21 float"></div>
+			<div class="blue demo11 float"></div>
+		</div>
+		<div>
+			<div class="gray demo12 float"></div>
+			<div style="width: 300px;height: 200px;float: left;">
+				<div class="demo11 float blue"></div>
+				<div class="demo11 float gray"></div>
+				<div class="demo11 float green"></div>
+				<div class="demo11 float pink"></div>
+				<div class="demo11 float green"></div>
+				<div class="demo11 float gray"></div>
+			</div>
+		</div>
+		<div>
+			<div class="float demo12 pink"></div>
+			<div class="float demo12 gray"></div>
+			<div style="width: 200px;height: 200px;float: left;">
+				<div class="float demo21 pink"></div>
+				<div class="float">
+					<div class="float demo11 green"></div>
+					<div class="float demo11 blue"></div>
+				</div>
+			</div>
+		</div>
+		<div style="width: 600px;float: left;margin-left: -100px;">
+			<div class="float demo11 green"></div>
+			<div class="float demo11 gray"></div>
+			<div class="float demo11 pink"></div>
+			<div class="float demo11 blue"></div>
+			<div class="float demo11 green"></div>
+			<div class="float demo11 pink"></div>
+		</div>
+	</div>
+</body>
+</html>

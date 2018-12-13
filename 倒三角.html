@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS实现倒三角</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var row = 10;
+		for (r = 1; r <= row; r++) {//初始化每一行
+			var pri = '';
+			for (var space = 0; space < r-1; space++) {
+				pri += ' ';//设置每行的空格数
+			}
+			for (var star = 0; star < row + 1 - r; star++) {
+				pri += '* ';//设置每行的*数，多加一个空格，出现错位效果
+			}
+		console.log(pri);
+		}
+		
+	</script>
+</body>
+</html>
