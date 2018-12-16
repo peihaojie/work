@@ -1,0 +1,260 @@
+*{margin: 0;padding: 0;list-style: none;}
+a{text-decoration:none;color: #000; }
+.bod{
+	width: 980px;margin: auto;
+	background-image: url(bj.png);
+	background-repeat: repeat;
+	height: 1057px;
+}
+.top{/*标题栏背景色*/
+	width: 100%;background-color: #003c62;
+	display: inline-block;overflow: hidden;
+}
+.top1{/*第一栏标题*/
+	width: 100%;background-color: #f4f9fa;
+	height: 65px;margin-top: 7px;
+}
+.top1 img{margin-left: 15px;margin-top: 10px;}/*标题栏图片*/
+.text1{display: inline-block;margin-left: 10px;}/*标题栏文字*/
+.text1 h1{
+	font-size: 18px;line-height: 20px;
+	font-weight: 500;display: inline-block;
+	margin-bottom: 3px;
+}
+.text1 p{font-size: 9px;line-height: 11px;color: #747373}
+.top2{/*第二栏标题*/
+	background-color: #eec3c7;width: 100%;
+	display: inline-block;
+	border-top: 1px solid #ac1a35;
+	border-bottom: 1px solid #0b5e81;
+}
+.ull{/*标题选项卡*/
+	width: 100%;height: 32px;text-align: center;
+	display: inline-block;margin-top: 3px;
+	border: 1px solid #4087ad;
+	border-top: 1px solid #d2354e;
+	background: linear-gradient(#96cfea,#006193,#045983);
+}
+.ull li{/*每一项*/
+	display: inline-block;line-height: 33px;
+	font-size: 12px;padding: 0px 10px;
+	color: #fff;
+}
+.ull li.cli{/*单项选中*/
+	background: linear-gradient(#ecb8be,#ba2636,#f08c97);
+	border-top: 1px solid #eec3c7;
+	border-left: 1px solid #c32944;
+	border-right: 1px solid #c32944;
+	border-bottom: 1px solid #c32944;
+	margin-top: -1px;
+}
+.ima{
+	height: 270px;width: calc(100% -  15px);
+	margin: 10px auto;
+}
+.tu{/*图片背景--白*/
+	width: 740px;height: 270px;
+	border-radius: 5px;
+	background-color: #fff;float: left;
+	position: relative;margin-right: 10px;
+}
+.tu img{/*图片定位*/
+	position: absolute;top: 10px;left: 10px;
+	border-radius: 5px;
+}
+.bai{/*上留白*/
+	width: 100%;height: 25px;
+	position: absolute;top: 0px;left: 0px;
+	background-color: #fff;opacity: 0.5;
+	border-radius: 5px;
+}
+.bottom{/*下留白*/
+	width: 100%;height: 35px;
+	position: absolute;bottom: 0px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 5px;
+}
+.bottom1{/*图片按钮*/
+	float: right;
+	margin-right: 10px;margin-top: 5px;
+}
+.bottom1 button{/*按钮样式*/
+	float: right;margin-right: 10px;
+	width: 20px;height: 20px;
+	border-radius: 5px;
+}
+.aa{/*按钮选中时改变CSS*/
+	background: linear-gradient(#b7e0f3,#035985);
+	border: 1px solid #0b5e81;color: #fff;
+}
+.bb{/*按钮正常时CSS*/
+	background-color: #fff;
+	border: 0px solid #fff;color: #000;
+}
+.wuye{/*物业管理*/
+	width: 215px;float: left;height: 270px;
+	border-radius: 5px;background-color: #fff;
+}
+.guanli{/*物业管理*/
+	width: 210px;height: 27px;line-height: 27px;
+	background-color: #303338;margin: 5px auto;
+	border-radius: 5px;position: relative;
+}
+.guanli img{
+	position: absolute;top: 50%;left: 15px;
+	margin-top: -5px;
+}
+.guanli p{
+	display: inline-block;color: #fff;
+}
+.wuyeguanli{margin-left: 35px;font-size: 16px;font-weight: 500;}
+.more{float: right;margin-right: 5px;font-size: 12px;color: #fff}
+.liebiao{/*物业管理的选项*/
+	width: 200px;height: 45px;
+	border-bottom: 1px dotted #000;
+	font-size: 11px;position: relative;
+	line-height: 45px;margin: auto;
+}
+.lef{/*图片左侧定位*/
+	position: absolute;top: 50%;margin-top: -16px;
+}
+.liebiao span{/*文字*/
+	margin-left: 45px;color: #000;
+}
+.rig{/*图片右侧浮动*/
+	position: absolute;right: 2px;
+	top: 50%;margin-top: -5px;
+}
+.unline{/*最后一个div下划线的取消*/
+	border-bottom: 0px solid #fff;
+}
+.gonggao{/*公告栏*/
+	width: calc(100% -  15px);height: 35px;
+	margin: 0px auto 10px;border-radius: 5px;
+	background-color: #fff;line-height: 35px;
+	position: relative;
+}
+.xinxi{display: inline-block;}
+.xinxi img{
+	position: absolute;top: 50%;left: 20px;
+	margin-top: -10px;
+}
+.xinxi span{margin-left: 50px;}
+.spa{font-size: 12px;}
+.us{
+	width: calc(100% -  15px);margin:auto;
+	margin-bottom: 10px;height: 266px;
+}
+.about{/*关于我们*/
+	width: 278px;height: 266px;
+	background-color: #fff;border-radius: 5px;
+	text-align: center;display: inline-block;
+	float: left;
+}
+.about1{
+	width:calc(100% - 10px);height: 27px;
+	background-color: #303338;color: #fff;
+	border-radius: 5px;margin: 5px auto;
+	display: inline-block;line-height: 27px;
+	position: relative;text-align: left;
+}
+.about1 img{/*点.npg的居中定位*/
+	position: absolute;top: 50%;margin-top: -5px;
+	margin-left: 20px;
+}
+.about2 img{border-radius: 5px;}
+.about3{
+	font-size: 12px;line-height: 16px;
+	width: 248px;display: inline-block;
+	text-align: left;margin-top: 10px;
+}
+.bgc{
+	width: 224px;height: 266px;
+	margin-left: 5px;background-color: #fff;
+	border-radius: 5px;display: inline-block;
+	float: left;font-size: 12px;text-align: center;
+	position: relative;
+}
+.houqin1{
+	width:calc(100% - 10px);height: 27px;
+	color: #000;border-radius: 5px;margin: 5px auto;
+	display: inline-block;line-height: 27px;
+	position: relative;text-align: left;
+}
+.houqin1 img{/*点.npg的居中定位*/
+	position: absolute;top: 50%;margin-top: -5px;
+	margin-left: 20px;
+}
+.houqin2 img{border-radius: 5px;}
+.houqin3{
+	font-size: 12px;line-height: 16px;
+	width: 200px;display: inline-block;
+	text-align: left;margin-top: 10px;
+}
+.houqin4{
+	position: absolute;right: 10px;bottom: 10px;
+}
+.news{
+	width: calc(100% -  15px);margin:auto;
+	margin-bottom: 10px;height: 224px;
+}
+.news1{
+	width: 732px;height: 224px;
+	float: left;background-color: #fff;
+	border-radius: 5px;text-align: center;
+}
+.newss1{
+	width: calc(100% - 10px);height: 27px;
+	background-color: #303338;color: #fff;
+	border-radius: 5px;margin: 5px auto;
+	display: inline-block;line-height: 27px;
+	position: relative;text-align: left;
+}
+.newss1 img{/*点.npg的居中定位*/
+	position: absolute;top: 50%;margin-top: -5px;
+	margin-left: 20px;
+}
+.newss2{
+	width: calc(100% - 20px);height: 27px;
+	border-bottom: 1px dotted #000;
+	margin:3px auto;text-align: left;
+	position: relative;
+}
+.tim{float: right;}
+.newss3{border-bottom: 0px solid #000}
+.news2{
+	height: 224px;width: calc(100% - 742px);
+	background-color: #fff;border-radius: 5px;
+	float: left;margin-left: 10px;text-align: center;
+}
+.lianxiwomen{
+	width:calc(100% - 20px);height: 27px;
+	margin: 10px auto;background-color: #34373c;
+	text-align: left;line-height: 27px;
+	border-radius: 5px;position: relative;
+}
+.lianxiwomen img{/*点.npg的居中定位*/
+	position: absolute;top: 50%;margin-top: -5px;
+	margin-left: 20px;
+}
+.lianxi{
+	margin-left: 35px;font-size: 16px;
+	font-weight: 500;color: #fff;
+}
+.found{
+	width: 205px;height: 50px;
+	border: 1px solid #34373c;
+	border-radius: 5px;
+	margin: 5px auto;
+}
+.butt{
+	width: 960px;height: 87px;
+	margin: 10px auto;font-size: 12px;
+	background-color: #34373c;
+	text-align: center;color: #fff;
+	position: relative;
+}
+.butt div{
+	position: absolute;top: 50%;left: 50%;
+	margin-top: -16px;margin-left: -124px;
+}
