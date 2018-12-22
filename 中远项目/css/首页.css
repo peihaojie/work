@@ -2,9 +2,9 @@
 a{text-decoration:none;color: #000; }
 .bod{
 	width: 980px;margin: auto;
-	background-image: url(bj.png);
+	background-image: url(../image/bj.png);
 	background-repeat: repeat;
-	height: 1057px;
+	height: 100%;
 }
 .top{/*标题栏背景色*/
 	width: 100%;background-color: #003c62;
@@ -40,17 +40,32 @@ a{text-decoration:none;color: #000; }
 	font-size: 12px;padding: 0px 10px;
 	color: #fff;
 }
-.ull li.cli{/*单项选中*/
+#cli{
 	background: linear-gradient(#ecb8be,#ba2636,#f08c97);
 	border-top: 1px solid #eec3c7;
 	border-left: 1px solid #c32944;
 	border-right: 1px solid #c32944;
 	border-bottom: 1px solid #c32944;
-	margin-top: -1px;
+	margin-top: -1px;padding: 0px 9px;
+}
+.cli:hover{
+	background-color: black;
+}
+.ull li:hover{/*单项选中,更改左右内边距，清除添加边框后的width加成*/
+	background: linear-gradient(#ecb8be,#ba2636,#f08c97);
+	border-top: 1px solid #eec3c7;
+	border-left: 1px solid #c32944;
+	border-right: 1px solid #c32944;
+	border-bottom: 1px solid #c32944;
+	margin-top: -1px;padding: 0px 9px;
 }
 .ima{
-	height: 270px;width: calc(100% -  15px);
-	margin: 10px auto;
+	width: calc(100% -  15px);margin: 10px auto;
+}
+.ima::after{/*清除浮动*/
+	content: '';
+	display: block;
+	clear: both;
 }
 .tu{/*图片背景--白*/
 	width: 740px;height: 270px;
@@ -83,7 +98,7 @@ a{text-decoration:none;color: #000; }
 	width: 20px;height: 20px;
 	border-radius: 5px;
 }
-.aa{/*按钮选中时改变CSS*/
+button:hover{/*按钮选中时改变CSS*/
 	background: linear-gradient(#b7e0f3,#035985);
 	border: 1px solid #0b5e81;color: #fff;
 }
@@ -119,7 +134,7 @@ a{text-decoration:none;color: #000; }
 	position: absolute;top: 50%;margin-top: -16px;
 }
 .liebiao span{/*文字*/
-	margin-left: 45px;color: #000;
+	margin-left: 50px;color: #000;
 }
 .rig{/*图片右侧浮动*/
 	position: absolute;right: 2px;
@@ -127,6 +142,9 @@ a{text-decoration:none;color: #000; }
 }
 .unline{/*最后一个div下划线的取消*/
 	border-bottom: 0px solid #fff;
+	overflow: hidden;text-overflow: ellipsis;
+	white-space: nowrap;padding-right: 10px;
+	width: 190px;
 }
 .gonggao{/*公告栏*/
 	width: calc(100% -  15px);height: 35px;
@@ -143,13 +161,18 @@ a{text-decoration:none;color: #000; }
 .spa{font-size: 12px;}
 .us{
 	width: calc(100% -  15px);margin:auto;
-	margin-bottom: 10px;height: 266px;
+	margin-bottom: 10px;
+}
+.us::after{/*清除浮动*/
+	content: '';
+	display: block;
+	clear: both;
 }
 .about{/*关于我们*/
 	width: 278px;height: 266px;
 	background-color: #fff;border-radius: 5px;
 	text-align: center;display: inline-block;
-	float: left;
+	float: left;overflow: hidden;
 }
 .about1{
 	width:calc(100% - 10px);height: 27px;
@@ -173,7 +196,7 @@ a{text-decoration:none;color: #000; }
 	margin-left: 5px;background-color: #fff;
 	border-radius: 5px;display: inline-block;
 	float: left;font-size: 12px;text-align: center;
-	position: relative;
+	position: relative;overflow: hidden;
 }
 .houqin1{
 	width:calc(100% - 10px);height: 27px;
@@ -190,13 +213,19 @@ a{text-decoration:none;color: #000; }
 	font-size: 12px;line-height: 16px;
 	width: 200px;display: inline-block;
 	text-align: left;margin-top: 10px;
+	height: 50px;overflow: hidden;
 }
 .houqin4{
 	position: absolute;right: 10px;bottom: 10px;
 }
 .news{
 	width: calc(100% -  15px);margin:auto;
-	margin-bottom: 10px;height: 224px;
+	margin-bottom: 10px;
+}
+.news::after{
+	content: '';
+	display: block;
+	clear: both;
 }
 .news1{
 	width: 732px;height: 224px;
