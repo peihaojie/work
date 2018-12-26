@@ -1,0 +1,44 @@
+*{margin: 0;padding: 0}
+html{font-size: 100px;}
+.logo{
+	width: 100%;
+	height: 1.1rem;
+	position: relative;
+}
+.logo1{
+	position: absolute;
+	top: 50%;left: 13%;
+	margin-top: -0.41rem;
+	width: 25%;
+	border-right: 0.02rem solid #a8a8a8;
+	padding-right: 0.2rem;
+}
+.logo2{
+	position: absolute;
+	top: 50%;left: 43%;
+	margin-top: -0.42rem;
+	width: 8.5%;
+}
+.logo3{
+	color: #464646;
+	font-size: 0.24rem;
+	position: absolute;
+	top: 50%;left: 55%;
+	margin-top: -0.31rem;
+}
+.logo3 h6{
+	font-size: 0.24rem;
+	font-weight: 550;
+}
+.filing{
+	width: 100%;
+	color: #e2e2e2;
+	text-align: center;
+}
+#black{background-color: #2c2c2c;}
+.center{font-size: 0}
+.center span{
+	font-size: 0.24rem;
+	line-height: 0.48rem;
+}
+.margin{margin-right: 0.3rem;}

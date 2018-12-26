@@ -120,7 +120,8 @@ a{text-decoration:none;color: #000; }
 .quan{border: 1px solid #9dd3e2;}
 .bgc4{
 	float: right;margin: 15px 15px 15px 0px;
-	position: relative;vertical-align: bottom;
+	font-size: 0;
 }
 .bai{border: 1px solid #fff;}
-.quan img{float: left;}
+.quan img{display: block;}
+.quan1{vertical-align: top;}
