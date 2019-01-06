@@ -1,7 +1,6 @@
-*{margin: 0;padding: 0}
-html{font-size: 100px;}
-body{font-size: 0.24rem;background-color: #f8f8f8;}
+body{background-color: #f8f8f8;}
 div{background-color: #fff;}
+a{color: #000;text-decoration: none;}
 .top{
 	background-image: url(../images/首页/bg1.png);
 	background-repeat: no-repeat;
@@ -154,8 +153,6 @@ div{background-color: #fff;}
 	margin-top: -0.125rem;
 }
 .site2{
-	width: 88%;
-	margin-left: 6%;
 	margin-top: 0.2rem;
 	margin-bottom: 0.2rem;
 }

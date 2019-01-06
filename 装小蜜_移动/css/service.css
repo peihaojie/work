@@ -1,0 +1,94 @@
+.top{
+	background-color: #2c2c2c;
+	width: 100%;height: 1rem;
+	position: relative;
+	text-align: center;
+}
+.lef{
+	position: absolute;
+	top: 50%;left: 5%;
+	margin-top: -0.2rem;
+}
+.rig{
+	position: absolute;
+	top: 50%;right: 5%;
+	margin-top: -0.04rem;
+}
+.top p{
+	color: #fff;
+	font-size: 0.4rem;
+	line-height: 1rem;
+}
+.top2::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.top2 img{float: left;width: 100%}
+.top2{position: relative;}
+.top2 h1{
+	font-size: 0.8rem;
+	font-weight: 500;
+	display: inline-block;
+}
+.top2 h6{
+	font-size: 0.36rem;
+	font-weight: 500;
+	display: inline-block;
+}
+.cir{
+	background-color: gray;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 0.4rem;
+	color: #fff;
+}
+.other{
+	display: inline-block;
+	margin-left: 0.3rem;
+	margin-right: 0.3rem;
+}
+.other p{font-size: 0.6rem;}
+.other span{
+	color: #707070;
+	font-size: 0.32rem;
+}
+.text1{
+	position: absolute;
+	top: 6rem;left: 0.4rem;
+}
+.text1 .cir{background-color: #ff5858;}
+.text1 p{color: #ff5858;}
+.text2{
+	position: absolute;
+	top: 9rem;right: 0.4rem;
+	text-align: right;
+}
+.text2 .cir{background-color: #ff7a46;}
+.text2 p{color: #ff7a46;}
+.text3{
+	position: absolute;
+	top: 12rem;left: 0.4rem;
+}
+.text3 .cir{background-color: #ffae2e;}
+.text3 p{color: #ffae2e;}
+.text4{
+	position: absolute;
+	top: 15.2rem;right: 0.4rem;
+	text-align: right;
+}
+.text4 .cir{background-color: #b6ca4c;}
+.text4 p{color: #b6ca4c;}
+.text5{
+	position: absolute;
+	top: 18.3rem;left: 0.4rem;
+}
+.text5 .cir{background-color: #6fc242;}
+.text5 p{color: #6fc242;}
+.text6{
+	position: absolute;
+	top: 21.8rem;right: 0.4rem;
+	text-align: right;
+}
+.text6 .cir{background-color: #1cab73;}
+.text6 p{color: #1cab73;}
