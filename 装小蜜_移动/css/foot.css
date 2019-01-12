@@ -1,4 +1,5 @@
 *{margin: 0;padding: 0}
+*{ max-height: 999999px; } 
 html{font-size: 100px;}
 body{font-size: 0.24rem;}
 .logo{

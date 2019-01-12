@@ -1,0 +1,145 @@
+.top{
+	background-color: #2c2c2c;
+	width: 100%;height: 1rem;
+	position: relative;
+	text-align: center;
+}
+.lef{
+	position: absolute;
+	top: 50%;left: 5%;
+	margin-top: -0.2rem;
+}
+.rig{
+	position: absolute;
+	top: 50%;right: 5%;
+	margin-top: -0.04rem;
+}
+.top p{
+	color: #fff;
+	font-size: 0.4rem;
+	line-height: 1rem;
+}
+.bg1{position: relative;}
+.bg1::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.bg1 img{
+	float: left;
+	width: 100%;
+}
+.tex{
+	position: absolute;
+	top:50%;right: 10%;
+	margin-top: -0.79rem;
+}
+.tex h6{
+	font-size: 0.6rem;
+	font-weight: 600;
+	color: #fff;
+}
+.bg2{
+	width: 80%;
+	margin: auto;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+}
+input{
+	box-sizing: border-box;
+	width: 100%;
+	line-height: 1rem;
+	font-size: 0.42rem;
+	color: #b5b5b5;
+	background-color: #f5f5f5;
+	border-radius: 15px;
+	margin-bottom: 0.4rem;
+	border: 1px solid #c7c7c7;
+	padding-left: 0.5rem;
+}
+.inp input{
+	width: 65%;
+}
+.gray{
+	width: 30%;
+	float: right;
+	background-color: #ffa751;
+	text-align: center;
+	border-radius: 15px;
+}
+.gray p{
+	font-size: 0.38rem;
+	line-height: 1rem;
+	color: #fff;
+}
+.remember{
+	margin-bottom: 0.2rem;
+}
+.remember input{
+	width: 0.4rem;
+	height: 0.3rem;
+	margin-bottom: auto;
+}
+.remember span{
+	color: #6c6c6c;
+	font-size: 0.32rem;
+	line-height: 0.5rem;
+}
+.butt input{padding: 0;}
+.from{
+	background-color: #fff;
+	width: 45%;
+	border: 1px solid #ffa751;
+	border-radius: 15px;
+	color: #ffa751;
+	font-size: 0.38rem;
+}
+.online{
+	float: right;
+	width: 45%;
+	color: #fff;
+	background-color: #ffa751;
+	border: 1px solid #ffa751;
+	border-radius: 15px;
+	font-size: 0.45rem;
+}
+.tex2{
+	text-align: center;
+	position: relative;
+	margin: 0.3rem 0rem;
+}
+.tex2 p{
+	display: inline-block;
+	margin: auto;
+	font-size: 0.36rem;
+	color: #5b5b5b;
+	position: relative;
+}
+.line::before,.line::after{
+	position: absolute;
+	width: calc(100% - 6rem);
+	height: 1px;
+	content: '';
+	background-color: #ccc;
+	top: 50%;
+}
+.line::before{left: 0;}
+.line::after{right: 0;}
+.pic img{
+	float: left;
+	width: 1.5rem;
+	margin-right: 0.5rem;
+	margin-top: 0.2rem;
+}
+.only{
+	margin-right: 0rem!important;
+}
+.pic::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.pos{
+	position: absolute;
+	right: 0.5rem;top: 6rem;
+}
