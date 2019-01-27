@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Tab 切换</title>
+	<style type="text/css" media="screen">
+		.bod{
+			width: 600px;
+			margin: auto;
+			border: 1px solid #282923;
+		}
+		.top1 span{
+			background-color: #6CE3E3;
+			float: left;
+			width: 200px;
+			height: 100px;
+			text-align: center;
+			line-height: 100px;
+			font-size: 30px;
+		}
+		.top1::after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.top2 div{
+			height: 400px;
+			padding: 5px;
+			font-size: 25px;
+			background-color: #C0C0C0;
+			display: none;
+		}
+		.top1 .onn{
+			background-color: #287B79;
+		}
+		.top2 .hi{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="bod">
+		<div class="top1" id="top1">
+			<span class="onn">体育</span>
+			<span>新闻</span>
+			<span>音乐</span>
+		</div>
+		<div class="top2" id="top2">
+			<div class="hi">新浪体育提供最快速最全面最专业的体育新闻和赛事报道,主要有以下栏目:中国足球、国际足球、篮球、NBA、综合体育、奥运、F1、网球、高尔夫、棋牌、彩票、视频、图片、...</div>
+			<div>百度新闻是包含海量资讯的新闻服务平台,真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等,快速了解它们的最新进展。</div>
+			<div>千千音乐是中国音乐门户之一,为你提供海量正版高品质音乐,权威的音乐榜单,快速的新歌速递,契合你的主题电台,</div>
+		</div>
+	</div>
+	<script type="text/javascript" charset="utf-8" async defer>
+		var top1 = document.getElementById('top1').getElementsByTagName('span');
+		var top2 = document.getElementById('top2').getElementsByTagName('div');
+
+		// 使用闭包
+		for (var i = 0; i < top1.length; i++) {
+			top1[i].onclick = function(num){
+				return function(){
+					for (var j = 0; j < top1.length; j++) {
+						top1[j].className = '';
+						top2[j].className = '';
+					}
+					top1[num].className = 'onn';
+					top2[num].className = 'hi';
+				}
+			}(i) //将i的值传递给函数，并且立即调用函数。
+		}
+
+		// // 利用this指向
+		// for (var i = 0; i < top1.length; i++) {
+		// 	top1[i].onclick = function(){
+		// 		for (var j = 0; j < top1.length; j++) {
+		// 			if (top1[j] == this) {       //this返回函数的所有者，等于被点击的数组项
+		// 				top1[j].className = 'onn';
+		// 				top2[j].className = 'hi';
+		// 			}else{
+		// 				top1[j].className = '';
+		// 				top2[j].className = '';
+		// 			}
+		// 		}
+		// 	}
+		// }
+
+		// // 使用自定义属性
+		// for (var i = 0; i < top1.length; i++) {
+		// 	top1[i].a = i;
+		// 	top1[i].onclick = function(){
+		// 		for (var j = 0; j < top1.length; j++) {
+		// 			top1[j].className = '';
+		// 			top2[j].className = '';
+		// 		}
+		// 		top1[this.a].className = 'onn';
+		// 		top2[this.a].className = 'hi';
+		// 	}   //利用this指向属性获取点击项在该数组的位置
+		// }
+
+		// // 使用函数封装
+		// top1[0].onclick = function(){
+		// 	change(0);
+		// }
+		// top1[1].onclick = function(){
+		// 	change(1);
+		// }
+		// top1[2].onclick = function(){
+		// 	change(2);
+		// }
+
+		// function change(a){
+		// 	for (var i = 0; i < top1.length; i++) {
+		// 		top1[i].className = '';
+		// 		top2[i].className = '';
+		// 	}
+		// 	top1[a].className = 'onn';
+		// 	top2[a].className = 'hi';
+		// }
+		
+		//// 简单版本（思路二）
+		// top1[0].onclick = function(){
+		// 	for (var i = 0; i < top1.length; i++) {
+		// 		top1[i].className = '';
+		// 		top2[i].className = '';
+		// 	}
+		// 	top1[0].className = 'onn';
+		// 	top2[0].className = 'hi';
+		// }
+		// top1[1].onclick = function(){
+		// 	for (var i = 0; i < top1.length; i++) {
+		// 		top1[i].className = '';
+		// 		top2[i].className = '';
+		// 	}
+		// 	top1[1].className = 'onn';
+		// 	top2[1].className = 'hi';
+		// }
+		// top1[2].onclick = function(){
+		// 	for (var i = 0; i < top1.length; i++) {
+		// 		top1[i].className = '';
+		// 		top2[i].className = '';
+		// 	}
+		// 	top1[2].className = 'onn';
+		// 	top2[2].className = 'hi';
+		// }
+		
+		//// 简单版本（思路一）
+		// top1[0].onclick = function () {
+		// 	top1[0].className = 'onn';
+		// 	top1[1].className = '';
+		// 	top1[2].className = '';
+		// 	top2[0].className = 'hi';
+		// 	top2[1].className = '';
+		// 	top2[2].className = '';
+		// }
+		// top1[1].onclick = function () {
+		// 	top1[0].className = '';
+		// 	top1[1].className = 'onn';
+		// 	top1[2].className = '';
+		// 	top2[0].className = '';
+		// 	top2[1].className = 'hi';
+		// 	top2[2].className = '';
+		// }
+		// top1[2].onclick = function () {
+		// 	top1[0].className = '';
+		// 	top1[1].className = '';
+		// 	top1[2].className = 'onn';
+		// 	top2[0].className = '';
+		// 	top2[1].className = '';
+		// 	top2[2].className = 'hi';
+		// }
+	</script>
+</body>
+</html>
