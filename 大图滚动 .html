@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		*{margin: 0px;padding: 0px;}
+		body{text-align: center;}
+		#out{
+			width: 200px;height: 400px;
+			overflow-x: hidden;
+			overflow-y: hidden;
+			margin:100px auto 0px;
+		}
+		#ull{
+			width: 1000px;height: 400px;
+		}
+		#ull li{
+			float: left;
+			list-style: none;
+			width: 200px;height: 400px;
+		}
+		#li1{background-color:#FF0000 }
+		#li2{background-color:#FF5D00 }
+		#li3{background-color:#F7FF00 }
+		#li4{background-color:#48FF00 }
+		#li5{background-color:#0081FF }
+		#inp{
+			margin: auto;
+			display: inline-block;
+		}
+		input{
+			margin-right: 5px;
+			width: 20px;height: 20px;
+			background-color: gray;
+			border: 1px solid gray;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="out">
+		<ul id="ull">
+			<li id="li1">1</li>
+			<li id="li2">2</li>
+			<li id="li3">3</li>
+			<li id="li4">4</li>
+			<li id="li5">5</li>
+		</ul>
+	</div>
+	<div id="inp">
+		<input type="button" value="上">
+		<input type="button" value="1">
+		<input type="button" value="2">
+		<input type="button" value="3">
+		<input type="button" value="4">
+		<input type="button" value="5">
+		<input type="button" value="下">
+	</div>
+	<script type="text/javascript" charset="utf-8" async defer>
+		var out = document.getElementById('out');
+		var ull = document.getElementById('ull');
+		var lis = ull.getElementsByTagName('li');
+		var inp = document.getElementById('inp');
+		var inps = inp.getElementsByTagName('input');
+		var timer
+		var num = 0
+		var upp
+		// 输入结束位置，移动到相应位置
+		function move(end){
+			// 如果有循环则停止循环
+			if (timer) {clearInterval(timer)};
+			// 单次滑动距离的函数，之后会循环调用
+			function moving(){
+				// 将初始位置设定为起点
+				var start = out.scrollLeft;
+				if ((end - start) > 0) {
+					// 计算出每次移动的距离，并且向上取整
+					var long = Math.ceil((end - start) /20);
+					start += long;
+					console.log(start);
+					// 将变化后的距离赋值给滑动距离
+					out.scrollLeft = start;
+					// 如果起始位置大于等于结束位置，则令两位置数据相等，结束循环
+					if (start >= end) {
+						out.scrollLeft = end;
+						clearInterval(timer);
+					}
+				}else if ((end - start) < 0) {
+					// 计算出每次移动的距离，并且向下取整
+					var long = Math.floor((end - start) /20);
+					start += long;
+					console.log(start);
+					// 将变化后的距离赋值给滑动距离
+					out.scrollLeft = start;
+					// 如果起始位置大于等于结束位置，则令两位置数据相等，结束循环
+					if (start <= end) {
+						out.scrollLeft = end;
+						clearInterval(timer);
+					}
+				}
+				
+			}
+			// 开始循环
+			timer = setInterval(moving,7)
+		}
+		// 每两秒自动跳转下一个图片
+		function jump(){
+			if (upp) {clearInterval(upp)};
+			function a(){
+				num++;
+				if (num == 5) {num = 0};
+				move(num * 200);
+			}
+			upp = setInterval(a,2000);
+		}
+		jump();
+		// 按键滚动原理，通过value属性修改num
+		for (var i = 1; i < 6; i++) {
+			inps[i].onclick = function(){
+				if (upp) {clearInterval(upp)};
+				num = this.value - 1;
+				move(num * 200);
+				jump();
+			}
+		}
+
+		inps[0].onclick = function(){
+			if (upp) {clearInterval(upp)};
+			num =  num - 1;
+			if (num < 0) {num = 4};
+			move(num * 200);
+			jump();
+		}
+		// 下一页按钮，结束循环，并重新开始循环。
+		inps[6].onclick = function(){
+			if (upp) {clearInterval(upp)};
+			num = num + 1;
+			if (num > 4) {num = 0};
+			move(num * 200);
+			jump();
+		}
+
+
+
+
+
+
+	</script>	
+</body>
+</html>

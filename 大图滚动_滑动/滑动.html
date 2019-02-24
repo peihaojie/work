@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大图滚动_滑动</title>
+	<style type="text/css" media="screen">
+		*{margin:0px;padding: 0px;}
+		#out{
+			margin: 20px auto 0px;
+			width: 300px;height: 600px;
+		}
+		#shang{
+			width: 300px;height: 300px;
+			overflow-x: hidden;
+			overflow-y: hidden;
+		}
+		#ull{
+			width: 1200px;height: 300px;
+		}
+		#ull li{
+			list-style: none;
+		}
+		#ull li img{
+			width: 300px;height: 300px;
+			float: left;
+		}
+		#xia{
+			margin: 10px auto;
+		}
+		#xia div{
+			background-color: purple;
+			border-radius: 5px;
+			margin-bottom: 10px;
+			padding-left: 5px;
+			height: 30px;width: 240px;
+			line-height: 30px;
+			color: #fff;
+			font-size: 15px;
+			transition: width 1s ease;
+		}
+		.long{width: 100%!important;}
+	</style>
+</head>
+<body>
+	<div id="out">
+		<div id="shang">
+			<ul id="ull">
+				<li><img src="1.jpg" alt=""></li>
+				<li><img src="2.jpg" alt=""></li>
+				<li><img src="3.jpg" alt=""></li>
+				<li><img src="4.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div id="xia">
+			<div class="long">因为美食，所以我们在相爱</div>
+			<div>因为美食，所以我们在相爱</div>
+			<div>因为美食，所以我们在相爱</div>
+			<div>因为美食，所以我们在相爱</div>
+		</div>
+	</div>
+	<script src="滑动.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
