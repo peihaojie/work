@@ -1,0 +1,68 @@
+*{margin: 0px;padding: 0px;}
+#out{
+	width: 400px;height: 370px;
+	margin: 50px auto 0px;
+	position: relative;
+	border: 1px solid black;
+}
+#box{
+	width: 400px;height: 300px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+}
+#shang{
+	width: 2000px;height: 300px;
+	background-color: pink;
+}
+#shang img{
+	float: left;
+	width: 400px;height: 300px;
+}
+p{
+	position: absolute;
+	bottom: 75px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	width: calc(100% - 10px);
+	height: 30px;
+	line-height: 30px;	
+	padding-left: 10px;
+}
+#xia{
+	width: 400px;height: 70px;
+	background-color: rgba(0, 0, 0, 0.7);
+	/* flex布局，与下面的flex：1互动 */
+	display: flex;
+}
+#xia img{
+	width: 62px;height: 50px;
+	margin: 7px 0px 7px 7px;
+	box-sizing: content-box;
+	/* border透明再添加border时便不会发生变化 */
+	border: 2px solid rgba(0, 0, 0, 0);
+	flex: 1;
+	cursor: pointer;
+	/* 图片灰度 */
+	filter: grayscale(60%);
+}
+#xia img:last-child{
+	margin-right: 7px;
+}
+.quan{
+	border: 2px solid #0015FF!important;
+	filter: grayscale(0%)!important;
+}
+#lef{
+	position: absolute;
+	left: 10px;top: 140px;
+	cursor: pointer;
+	opacity: 0;
+}
+#rig{
+	position: absolute;
+	right: 10px;top: 140px;
+	cursor: pointer;
+	opacity: 0;
+}
+.opacity{opacity:1!important;}
