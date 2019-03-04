@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>返回顶部</title>
+	<style type="text/css" media="screen">
+		*{margin: 0px;padding: 0px;}
+		ul{
+			background-color: #FFAD17;
+			margin: 20px;padding: 30px;
+		}
+		#too{
+			width: 100px;height: 100px;
+			background-color: #0F82B6;
+			position: fixed;
+			right: 50px;bottom: 50px;
+		}
+	</style>
+</head>
+<body>
+	<ul id="ull"></ul>
+	<div id="too">返回顶部</div>
+	<script>
+		var ull = document.getElementById('ull');
+		var div = document.getElementById('too');
+		var timer;
+
+		for (var i = 0; i < 500; i++) {
+			ull.innerHTML = ull.innerHTML + '<li>' + i + '</li>';
+		}
+
+		too.onclick = function(){
+			var topp = document.documentElement.scrollTop;
+			timer = setInterval(function(){
+				topp -= 50;
+				if (topp <= 0) {
+					document.documentElement.scrollTop = 0;
+					clearInterval(timer)
+				}
+				document.documentElement.scrollTop = topp;
+			},7)
+		}
+	</script>
+</body>
+</html>

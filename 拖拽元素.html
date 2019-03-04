@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>拖拽元素</title>
+	<style type="text/css" media="screen">
+		*{margin: 0px;padding: 0px}
+		#out{
+			margin: 10px;
+			border: 1px solid #2B48F8;
+			width: 500px;height: 500px;
+			background-color: #8DF5E3;
+			position: relative;
+		}
+		#box{
+			width: 50px;height: 50px;
+			background-color: #D9FC14;
+			position: absolute;
+			top: 0px;left: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div id="out">
+		<div id="box"></div>
+	</div>
+	<script>
+		var out = document.getElementById('out');
+		var box = document.getElementById('box');
+
+		box.onmousedown = function(event){
+			var mouse = event;
+			// 用鼠标的坐标减去box左上角的坐标，就是鼠标相对box的位置
+			var startx = event.clientX - box.offsetLeft;
+			var starty = event.clientY - box.offsetTop;
+			document.onmousemove = function(event){
+				// 鼠标的坐标减去鼠标相对box的位置，得到box左上角相对于父元素的位置
+				var endx = event.clientX - startx;
+				var endy = event.clientY - starty;
+				console.log('X的坐标为' + endx + 'Y的坐标为' + endy);
+				if (endx > (out.clientWidth - box.offsetWidth)) {endx = out.clientWidth - box.offsetWidth}
+				if (endx < 0) {endx = 0}
+				if (endy > (out.clientHeight - box.offsetHeight)) {endy = out.clientHeight - box.offsetHeight}
+				if (endy < 0) {endy = 0}
+				box.style.left = endx + 'px';
+				box.style.top = endy + 'px';
+			}
+		}
+		document.onmouseup = function(){
+			document.onmousemove = null;
+		}
+	</script>
+</body>
+</html>
