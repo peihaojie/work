@@ -1,0 +1,135 @@
+*{margin: 0px;padding: 0px;}
+div{border-radius: 5px;}
+.box{
+	width: 800px;height: 600px;
+	background-color: #C6CBF4;
+	padding: 10px;
+	margin: 30px auto;
+	display: flex;
+}
+.cen1{
+	background-color: rgba(255, 255, 255, 0.3);
+	flex: 1;
+	margin-right: 10px;
+	text-align: center;
+}
+.num{
+	padding: 20px 0px 20px 5px;
+}
+.num::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.cen1 .num span{
+	display: inline-block;
+	width: 50px;height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	background-color: #4F54D7;
+	float: left;
+	color: #fff;
+	margin: 15px 5px 0px 0px;
+	opacity: 0.5;
+}
+.tex{
+	color: #4F54D7;
+	padding: 50px 0px;
+}
+.tex p{
+	display: inline-block;
+}
+.tex input[type = 'text']{
+	margin: 0px 5px;
+	width: 50px;height: 30px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+.btn button{
+	width: 100px;height: 30px;
+	border: 1px solid #4F54D7;
+	background-color: #4F54D7;
+	border-radius: 5px;
+	color: #fff;
+}
+button:first-child{
+	margin-right: 10px;
+}
+.cen2{
+	background-color: #C6CBF4;
+	flex: 1;
+}
+.jieguo{
+	padding: 30px 0px 30px 0px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.num2{
+	padding: 10px 5px 10px 0px;
+	text-align: center;
+}
+.num2::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.cen2 .num2 span{
+	display: inline-block;
+	width: 50px;height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	background-color: #4F54D7;
+	float: right;
+	color: #fff;
+	margin: 10px 5px 0px 0px;
+}
+.cen2 p{
+	color: #4F54D7;
+	padding-left: 20px;
+}
+.btn2{
+	text-align: center;
+	padding: 20px;
+}
+.btn2 button{
+	width: 100px;height: 30px;
+	border: 1px solid red;
+	background-color: red;
+	border-radius: 5px;
+	color: #fff;
+}
+.cen3{
+	background-color: rgba(255, 255, 255, 0.3);
+	height: calc(100% - 231px)
+}
+.jiang1{
+	padding: 30px 0px 30px 0px;
+}
+.num3{
+	padding: 10px 5px 10px 0px;
+	text-align: center;
+}
+.num3::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.cen2 .num3 span{
+	display: inline-block;
+	width: 50px;height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	background-color: red;
+	float: right;
+	color: #fff;
+	margin: 10px 5px 0px 0px;
+}
+#word{
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+}
+#wenzi{color: red!important;}
+.opa{opacity: 1!important;}
+span,button{cursor: pointer}
