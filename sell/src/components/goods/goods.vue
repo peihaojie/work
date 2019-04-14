@@ -18,8 +18,8 @@
         <li v-for="item in goods" :key="item.index" class="food-list food-list-hook">
           <h1 class="title">{{item.name}}</h1>
           <ul>
-            <!-- 从每个组里v-for出所有的商品 -->
-            <li v-for='food in item.foods' :key="food.index" class="food-item border-1px" >
+            <!-- 从每个组里v-for出所有的商品，绑定点击事件 -->
+            <li @click="selectFood(food,$event)" v-for='food in item.foods' :key="food.index" class="food-item border-1px" >
               <div class="icon">
                 <img width="57" height="57" :src="food.icon">
               </div>
@@ -46,14 +46,16 @@
     <!-- 购物车插件,向组件传递seller的两个参数(配送费和起送价)和选中的商品 -->
     <!-- 这里通过DOM来操作，来将位置传输给他 -->
     <shopcart ref="shopcart" :select-foods='selectFoods' :delivery-price='seller.deliveryPrice' :min-price='seller.minPrice'></shopcart>
+    <food v-on:cart-add='_drop' v-on:cart-addd='_drop' :food='selectedFood' ref="food"></food>
   </div>
 </template>
 
 <script>
 import BScroll from 'better-scroll'
 // better-scroll是用来实现滚动的插件
-import shopcart from '../../components/shopcart/shopcart'
+import shopcart from '../shopcart/shopcart'
 import cartcontrol from '../cartcontrol/cartcontrol'
+import food from '../food/food'
 const ERR_OK = 0
 
 export default {
@@ -67,7 +69,8 @@ export default {
     return {
       goods: [],
       listHeight: [],
-      scrollY: 0
+      scrollY: 0,
+      selectedFood: {}
     }
   },
   created () {
@@ -124,6 +127,11 @@ export default {
     // 访问shopcart购物车组件，调用购物车组件的方法，通过DOM操作
     _drop (target) {
       this.$refs.shopcart.drop(target)
+    },
+    // 商品详情页点击
+    selectFood (food, event) {
+      this.selectedFood = food
+      this.$refs.food.show()
     }
   },
   computed: {
@@ -155,13 +163,13 @@ export default {
   components: {
     // 注册组件
     shopcart,
-    cartcontrol
+    cartcontrol,
+    food
   }
 }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-
 @import '../../common/stylus/mixin'
   .goods
     display:flex
