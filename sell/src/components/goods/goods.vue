@@ -77,6 +77,8 @@ export default {
     this.classMAP = ['decrease', 'discount', 'special', 'invoice', 'guarantee']
     this.$http.get('/goods').then(response => {
       // response的body方法返回一个json
+      // 看下状态码
+      // console.log(response.status)
       response = response.body
       if (response.errno === ERR_OK) {
         this.goods = response.data

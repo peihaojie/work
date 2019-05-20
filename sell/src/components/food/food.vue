@@ -18,11 +18,38 @@
             <span class="now">￥{{food.price}}</span>
             <span class="old" v-show="food.oldPrice">￥{{food.oldPrice}}</span>
           </div>
+          <div class="cartcontrol-wrapper">
+            <cartcontrol v-on:cart-add='_drop' :food='food'></cartcontrol>
+          </div>
+          <div @click="addFirst" class="buy" v-show="!food.count || food.count === 0">加入购物车</div>
         </div>
-        <div class="cartcontrol-wrapper">
-          <cartcontrol v-on:cart-add='_drop' :food='food'></cartcontrol>
+        <split v-show="food.info"></split>
+        <div class="info" v-show="food.info">
+          <h1 class="title">商品信息</h1>
+          <p class="text">{{food.info}}</p>
         </div>
-        <div @click="addFirst" class="buy" v-show="!food.count || food.count === 0">加入购物车</div>
+        <split></split>
+        <div class="rating">
+          <h1 class="title">商品评论</h1>
+          <ratingselect :select-type = 'selectType' :only-content = 'onlyContent' :desc = 'desc' :ratings = 'food.ratings' v-on:ratingtype-select="ratingtype" v-on:content-toggle="toggle"></ratingselect>
+          <div class="rating-wrapper">
+            <ul v-show="food.ratings && food.ratings.length">
+              <!-- 这里通过函数对比rateType与selectType来判断显示与点击相关内容 -->
+              <li v-show="needShow(rating.rateType, rating.text)" v-for="(rating,index) in food.ratings" class="rating-item border-1px" :key="index">
+                <div class="user">
+                  <span class="name">{{rating.username}}</span>
+                  <img :src="rating.avatar" class="avatar" width="12" height="12">
+                </div>
+                <!-- 调用了一个正则表达式的js方法，将Js时间换算格式 -->
+                <div class="time">{{rating.rateTime | formatDate}}</div>
+                <p class="text">
+                  <span class="iconfont" :class="{'icon-zan1':rating.rateType === 0, 'icon-cai':rating.rateType === 1}"></span>{{rating.text}}
+                </p>
+              </li>
+            </ul>
+            <div class="no-rating" v-show="!food.ratings || !food.ratings.length">暂无评价</div>
+          </div>
+        </div>
       </div>
     </div>
   </transition>
@@ -32,6 +59,12 @@
 import BScroll from 'better-scroll'
 import cartcontrol from '../cartcontrol/cartcontrol'
 import vue from 'vue'
+import split from '../split/split'
+import ratingselect from '../ratingselect/ratingselect'
+import { formatDate } from '../../common/js/date'
+// const POSITYPE = 0
+// const NEGATIVE = 1
+const ALL = 2
 export default {
   props: {
     food: {
@@ -40,12 +73,21 @@ export default {
   },
   data () {
     return {
-      showFlag: false
+      showFlag: false,
+      selectType: ALL,
+      onlyContent: false,
+      desc: {
+        all: '全部',
+        positype: '推荐',
+        negative: '吐槽'
+      }
     }
   },
   methods: {
     show () {
       this.showFlag = true
+      this.selectType = ALL
+      this.onlyContent = false
       // 页面滚动
       this.$nextTick(() => {
         if (!this.scroll) {
@@ -67,15 +109,48 @@ export default {
     },
     _drop () {
       this.$emit('cart-addd', event.target)
+    },
+    ratingtype (type) {
+      this.selectType = type
+      // 初始化滚动
+      this.$nextTick(() => {
+        this.scroll.refresh()
+      })
+    },
+    toggle (onlyContent) {
+      // 取反
+      this.onlyContent = !this.onlyContent
+      this.$nextTick(() => {
+        this.scroll.refresh()
+      })
+    },
+    needShow (type, text) {
+      if (this.onlyContent && !text) {
+        return false
+      }
+      if (this.selectType === ALL) {
+        return true
+      } else {
+        return type === this.selectType
+      }
+    }
+  },
+  filters: {
+    formatDate (time) {
+      let date = new Date(time)
+      return formatDate(date, 'yyyy-MM-dd hh:mm')
     }
   },
   components: {
-    cartcontrol
+    cartcontrol,
+    split,
+    ratingselect
   }
 }
 </script>
 
 <style lang='stylus' rel='stylesheet/stylus'>
+@import '../../common/stylus/mixin'
   .food
     position fixed
     left 0
@@ -106,6 +181,7 @@ export default {
           color #fff
     .content
       padding 18px
+      position relative
       .title
         line-height 14px
         margin-bottom 8px
@@ -133,24 +209,83 @@ export default {
               text-decoration:line-through
               font-size :10px
               color:rgb(147,153,159)
-    .cartcontrol-wrapper
-      position absolute
-      right 12px
-      bottom 12px
-    .buy
-      position absolute
-      right 18px
-      bottom 18px
-      z-index 10
-      line-height 24px
-      height 24
-      padding 0 12px
-      box-sizing border-box
-      font-size 10px
-      border-radius 12px
-      color #fff
-      background rgb(0,160,220)
-
+      .cartcontrol-wrapper
+        position absolute
+        right 12px
+        bottom 12px
+      .buy
+        position absolute
+        right 18px
+        bottom 18px
+        z-index 10
+        line-height 24px
+        height 24
+        padding 0 12px
+        box-sizing border-box
+        font-size 10px
+        border-radius 12px
+        color #fff
+        background rgb(0,160,220)
+    .info
+      padding 18px
+      .title
+        line-height 14px
+        margin-bottom 6px
+        font-size 14px
+        color rgb(7,17,27)
+      .text
+        line-height 24px
+        padding 0 8px
+        font-size 12px
+        color rgb(77,85,93)
+    .rating
+      padding-top 18px
+      .title
+        line-height 14px
+        margin-left 18px
+        font-size 14px
+        color rgb(7,17,27)
+      .rating-wrapper
+        padding 0 18px
+        .rating-item
+          position relative
+          padding 16px 0
+          border-1px(rgba(7,17,27,0.1))
+          .user
+            position absolute
+            right 0
+            top 16px
+            line-height 12px
+            font-size 0
+            .name
+              display inline-block
+              vertical-align top
+              font-size 10px
+              color rgb(147,153,159)
+              margin-right 6px
+            .avatar
+              border-radius 50%
+          .time
+            font-size 10px
+            line-height 12px
+            color rgb(147,153,159)
+            margin-bottom 6px
+          .text
+            line-height 16px
+            font-size 12px
+            color rgb(7,17,27)
+            .icon-zan1,.icon-cai
+              line-height 16px
+              margin-right 4px
+              font-size 12px
+            .icon-zan1
+              color rgb(0,160,220)
+            .icon-cai
+              color rgb(147,153,159)
+        .no-rating
+          padding 16px 0
+          font-size 12px
+          color rgb(147,153,159)
   // 过渡时
   .move-enter-active, .move-leave-active
     transition: all 0.2s linear

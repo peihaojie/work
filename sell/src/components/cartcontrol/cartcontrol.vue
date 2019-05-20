@@ -16,9 +16,7 @@ import vue from 'vue'
 
 export default {
   props: {
-    food: {
-      type: Object
-    }
+    food: Object
   },
   created () {
     // console.log(this.food)
