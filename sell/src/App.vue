@@ -12,32 +12,46 @@
         <router-link to="/seller">商家</router-link>
       </div>
     </div>
-    <!-- 路由组建，并传递seller -->
-    <router-view :seller='seller'></router-view>
+    <!-- 使用keep-alive元素，标签的组件实例能够被在它们第一次被创建的时候缓存下来，而不是点击之后重新渲染 -->
+    <keep-alive>
+      <!-- 路由组建，并传递seller -->
+      <router-view :seller='seller'></router-view>
+    </keep-alive>
   </div>
 </template>
 
 <script>
 import header from './components/header/header.vue'
-
+import { urlParse } from '../src/common/js/util'
 const ERR_OK = 0
 
 export default {
   // 双向绑定的数据,必须是函数
   data () {
     return {
-      seller: {}
+      seller: {
+        // 通过一个立即调用的函数使seller.id和url中的id绑定
+        // urlParse() 函数获取url中的id值并return（自己定义的)
+        id: (() => {
+          let queryParam = urlParse()
+          // console.log(queryParam)
+          return queryParam.id
+        })()
+      }
     }
   },
   // 生命周期钩子，vue实例创建完成调用
   created () {
     // 使用vue-resource获取数据
-    this.$http.get('/seller').then(response => {
+    this.$http.get('/seller?id=' + this.seller.id).then(response => {
       // response的body方法返回一个json
       response = response.body
       if (response.errno === ERR_OK) {
-        this.seller = response.data
-        console.log(this.seller)
+        // Object.assign() 方法用于将所有可枚举属性的值从一个或多个源对象复制到目标对象。它将返回目标对象。
+        // 如果只写this.seller = response.data则链接中的Id不会保存到seller内
+        this.seller = Object.assign({}, this.seller, response.data)
+        // this.seller = response.data
+        // console.log(this.seller)
       }
     })
   },

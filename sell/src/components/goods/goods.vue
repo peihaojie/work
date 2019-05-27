@@ -91,6 +91,7 @@ export default {
       }
     })
   },
+  // 方法
   methods: {
     // 分别获取对应的DOM，probeType:3表示监听
     // 这里使用了better-scroll组件
