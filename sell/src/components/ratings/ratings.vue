@@ -66,6 +66,7 @@ import BScroll from 'better-scroll'
 // const NEGATIVE = 1
 const ALL = 2
 const ERR_OK = 0
+
 export default {
   props: {
     seller: Object

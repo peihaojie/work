@@ -4,6 +4,7 @@ var goods = appData.goods
 var ratings = appData.ratings
 
 module.exports = {
+  baseUrl: './',
   devServer: {
     before (app) {
       app.get('/seller', function (rep, res) {
