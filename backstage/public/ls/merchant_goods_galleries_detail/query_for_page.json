@@ -1,0 +1,52 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "currentPage": 1,
+    "pageSize": 20,
+    "totalPage": 1,
+    "totalCount": 4,
+    "list": [{
+      "id": 7,
+      "merchantId": "1001",
+      "goodsGalleriesId": 5,
+      "imgUrl": "https://img.xinzhibang168.com/FmR88ILyONmakl5P1khxHlEt3qxc.jpg",
+      "status": 10,
+      "creator": 1,
+      "createTime": "2018-11-14 11:51:36",
+      "updator": "",
+      "updateTime": ""
+    }, {
+      "id": 16,
+      "merchantId": "1001",
+      "goodsGalleriesId": 5,
+      "imgUrl": "http://47.107.167.164/img/ls/1001/merchant/100120190116203537.jpg",
+      "status": 10,
+      "creator": 1,
+      "createTime": "2019-01-16 20:35:54",
+      "updator": "",
+      "updateTime": ""
+    }, {
+      "id": 26,
+      "merchantId": "1001",
+      "goodsGalleriesId": 5,
+      "imgUrl": "http://47.107.167.164/img/ls/1001/merchant/100120190128134206.jpeg",
+      "status": 10,
+      "creator": 1,
+      "createTime": "2019-01-28 13:42:09",
+      "updator": "",
+      "updateTime": ""
+    }, {
+      "id": 27,
+      "merchantId": "1001",
+      "goodsGalleriesId": 5,
+      "imgUrl": "http://47.107.167.164/img/ls/1001/merchant/100120190128134218.jpg",
+      "status": 10,
+      "creator": 1,
+      "createTime": "2019-01-28 13:42:20",
+      "updator": "",
+      "updateTime": ""
+    }],
+    "imgUrl": "http://47.107.167.164/img"
+  }
+}

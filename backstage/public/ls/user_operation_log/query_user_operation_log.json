@@ -1,0 +1,92 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "currentPage": 1,
+    "pageSize": 10,
+    "totalPage": 39,
+    "totalCount": 388,
+    "list": [{
+      "id": 389,
+      "operator": "商户1号",
+      "operationId": "1001",
+      "operationDate": "2019-05-07 20:40:40",
+      "operationRecord": "上架商品 商品ID: {\"id\":130}",
+      "merchantId": "1001",
+      "ip": "114.220.46.236"
+    }, {
+      "id": 388,
+      "operator": "商户1号",
+      "operationId": "1001",
+      "operationDate": "2019-05-07 20:40:32",
+      "operationRecord": "下架商品 商品ID: {\"id\":147}",
+      "merchantId": "1001",
+      "ip": "114.220.46.236"
+    }, {
+      "id": 387,
+      "operator": "商户1号",
+      "operationId": "1001",
+      "operationDate": "2019-05-07 20:30:12",
+      "operationRecord": "上架商品 商品ID: {\"id\":147}",
+      "merchantId": "1001",
+      "ip": "114.220.46.236"
+    }, {
+      "id": 386,
+      "operator": "商户1号",
+      "operationId": "1001",
+      "operationDate": "2019-05-07 20:30:08",
+      "operationRecord": "下架商品 商品ID: {\"id\":147}",
+      "merchantId": "1001",
+      "ip": "114.220.46.236"
+    }, {
+      "id": 385,
+      "operator": "商户1号",
+      "operationId": "1001",
+      "operationDate": "2019-04-28 15:29:01",
+      "operationRecord": "上架商品 商品ID: {\"id\":145}",
+      "merchantId": "1001",
+      "ip": "117.82.228.133"
+    }, {
+      "id": 384,
+      "operator": "商户1号",
+      "operationId": "1001",
+      "operationDate": "2019-04-28 15:28:58",
+      "operationRecord": "上架商品 商品ID: {\"id\":131}",
+      "merchantId": "1001",
+      "ip": "117.82.228.133"
+    }, {
+      "id": 383,
+      "operator": "商户1号",
+      "operationId": "1001",
+      "operationDate": "2019-04-28 15:28:53",
+      "operationRecord": "下架商品 商品ID: {\"id\":133}",
+      "merchantId": "1001",
+      "ip": "117.82.228.133"
+    }, {
+      "id": 382,
+      "operator": "商户1号",
+      "operationId": "1001",
+      "operationDate": "2019-04-28 15:28:50",
+      "operationRecord": "上架商品 商品ID: {\"id\":140}",
+      "merchantId": "1001",
+      "ip": "117.82.228.133"
+    }, {
+      "id": 381,
+      "operator": "商户1号",
+      "operationId": "1001",
+      "operationDate": "2019-04-28 15:28:47",
+      "operationRecord": "上架商品 商品ID: {\"id\":151}",
+      "merchantId": "1001",
+      "ip": "117.82.228.133"
+    }, {
+      "id": 380,
+      "operator": "商户1号",
+      "operationId": "1001",
+      "operationDate": "2019-04-28 15:28:42",
+      "operationRecord": "下架商品 商品ID: {\"id\":152}",
+      "merchantId": "1001",
+      "ip": "117.82.228.133"
+    }],
+    "imgUrl": ""
+  }
+}

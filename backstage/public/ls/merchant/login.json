@@ -1,0 +1,16 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "imgUrl": "http://47.107.167.164/img",
+    "merchantId": "1001",
+    "merchantOpenBeginTime": "10:30",
+    "merchantOpenEndTime": "22:00",
+    "merchantLogo": "/ls/1001/merchant/100120190428201302.jpg",
+    "merchantAddress": "",
+    "sessionId": "7EB99E24E4A732EC74066C8551258339",
+    "merchantIntroduction": "",
+    "merchantMobile": "13932493200",
+    "merchantName": "商户1号"
+  }
+}

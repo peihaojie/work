@@ -1,0 +1,13 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "id": 12313213331,
+    "reasonType": "撒旦法师打发斯蒂芬",
+    "sorts": 1,
+    "isUse": 0,
+    "creatTime": "1121321213213",
+    "updateTime": "1121321213213",
+    "merchantId": "10001",
+  }
+}

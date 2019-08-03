@@ -1,0 +1,19 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "code": "231564",
+    "groupManageId": 123,
+    "goodsName": "xxxx",
+    "groupStatus": 0,
+    "totalMoeny": 123,
+    "status": 0,
+    "mobilePhone": "13412341324",
+    "receiver": "xxx",
+    "phone": "13412341234",
+    "address": "xxxx",
+    "payType": "微信支付",
+    "creatTime": "22222222321465465",
+    "returnStatus": "0",
+  }
+}

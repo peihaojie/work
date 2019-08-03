@@ -1,0 +1,28 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "currentPage": 1,
+    "pageSize": 10,
+    "totalPage": 1,
+    "totalCount": 2,
+    "list": [{
+      "id": 19,
+      "reasonType": "鹅鹅鹅",
+      "sorts": 2,
+      "isUse": "",
+      "creatTime": "2019-03-04 23:48:24",
+      "updateTime": "",
+      "merchantId": "1001"
+    }, {
+      "id": 20,
+      "reasonType": "dsfbgsgqwef",
+      "sorts": 22,
+      "isUse": 0,
+      "creatTime": "2019-04-04 11:18:09",
+      "updateTime": "",
+      "merchantId": "1001"
+    }],
+    "imgUrl": ""
+  }
+}

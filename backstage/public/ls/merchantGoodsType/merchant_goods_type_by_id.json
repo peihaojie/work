@@ -1,0 +1,23 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "id": 29,
+    "typeName": "1",
+    "goodsNum": "",
+    "goodsUnit": "1",
+    "goodsSort": 1,
+    "attributeVal": "分类1",
+    "typeDesc": "1",
+    "typeIcon": "",
+    "parentId": 7,
+    "status": 0,
+    "showStatus": 0,
+    "updateTime": "",
+    "createTime": "2019-06-17 09:29:30",
+    "creator": 1,
+    "merchantId": "1001",
+    "updator": "",
+    "merchantGoods": ""
+  }
+}

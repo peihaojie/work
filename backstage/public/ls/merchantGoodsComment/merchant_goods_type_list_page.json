@@ -1,0 +1,48 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "currentPage": 1,
+    "pageSize": 10,
+    "totalPage": 1,
+    "totalCount": 2,
+    "list": [{
+      "id": 22,
+      "userName": "Read the moon",
+      "email": "",
+      "goodsName": "测试商品1",
+      "commentContent": "3333",
+      "merchantId": "1001",
+      "userId": 3,
+      "goodsId": 27,
+      "commentLevel": 3,
+      "commentReplyContent": "丰富的个的分公司电饭锅是梵蒂冈梵蒂冈是电饭锅水电费个发的啥够烦的",
+      "commentIp": "192.168.1.6",
+      "imgUrl": "http://127.0.0.1:8081/ls/image/20181124165006.png,http://127.0.0.1:8081/ls/image/20181124165006.png",
+      "createTime": "2018-11-24 16:50:07",
+      "updateTime": "2018-11-24 17:32:26",
+      "creator": 3,
+      "updator": 1,
+      "status": 2
+    }, {
+      "id": 9,
+      "userName": "测试用户",
+      "email": "345814882@qq.com",
+      "goodsName": "名称",
+      "commentContent": "123",
+      "merchantId": "1001",
+      "userId": 1,
+      "goodsId": 1,
+      "commentLevel": 3,
+      "commentReplyContent": "",
+      "commentIp": "127.0.0.1",
+      "imgUrl": "",
+      "createTime": "2018-11-23 13:48:25",
+      "updateTime": "2018-11-23 13:48:25",
+      "creator": 1,
+      "updator": 1,
+      "status": 2
+    }],
+    "imgUrl": ""
+  }
+}

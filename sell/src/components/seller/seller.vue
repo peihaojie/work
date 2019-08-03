@@ -111,10 +111,10 @@ export default {
       click: true
     })
     if (this.seller.pics) {
-      let picWidth = 120
-      let margin = 6
-      let width = (picWidth + margin) * this.seller.pics.length - margin
-      this.$refs.picList.style.width = width + 'px'
+      // let picWidth = 120
+      // let margin = 6
+      // let width = (picWidth + margin) * this.seller.pics.length - margin
+      this.$refs.picList.style.width = 498 + 'px' // width + 'px'
       this.$nextTick(() => {
         this.picScroll = new BScroll(this.$refs.picWrapper, {
           scrollX: true,

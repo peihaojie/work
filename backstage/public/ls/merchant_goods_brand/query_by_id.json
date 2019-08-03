@@ -1,0 +1,22 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "id": 4,
+    "code": "a010e1a38f864e1f9eeaa7d66e89b370",
+    "merchantId": "test",
+    "name": "不能超过20",
+    "firstChar": "d",
+    "logo": "http://127.0.0.1:8081看图片",
+    "areaLogo": "http://127.0.0.1:8081dasddddddddd",
+    "sorting": 100,
+    "isShow": 1,
+    "story": "不能超过255",
+    "isManufacturer": 1,
+    "status": 10,
+    "creator": 1,
+    "createTime": "2018-11-12 09:59:01",
+    "updator": "",
+    "updateTime": ""
+  }
+}

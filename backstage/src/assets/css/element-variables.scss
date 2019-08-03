@@ -1,0 +1,8 @@
+// 自定义主题
+// $--color-primary: 这个是定义主题色的变量 ；
+// $--font-path ：这是改变 icon 字体路径的变量，是必需项，一般默认为（'~element-ui/lib/theme-chalk/fonts' ）；
+// @import 的这个导入主题样式 ；
+
+$--color-primary: #5BC0BF;
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import "~element-ui/packages/theme-chalk/src/index";

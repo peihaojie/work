@@ -1,0 +1,93 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "currentPage": 1,
+    "pageSize": 10,
+    "totalPage": 1,
+    "totalCount": 9,
+    "list": [{
+      "id": 7,
+      "content": "上架拼团商品",
+      "createTime": "2018-12-18 10:43:31",
+      "updateTime": "",
+      "status": "",
+      "merchantId": 1001,
+      "merchantName": "商户1号",
+      "groupId": 1
+    }, {
+      "id": 8,
+      "content": "下架拼团商品",
+      "createTime": "2018-12-18 10:44:31",
+      "updateTime": "",
+      "status": "",
+      "merchantId": 1001,
+      "merchantName": "商户1号",
+      "groupId": 1
+    }, {
+      "id": 16,
+      "content": "下架拼团商品",
+      "createTime": "2019-02-16 15:24:55",
+      "updateTime": "",
+      "status": "",
+      "merchantId": 1001,
+      "merchantName": "商户1号",
+      "groupId": 1
+    }, {
+      "id": 17,
+      "content": "上架拼团商品",
+      "createTime": "2019-02-16 15:25:01",
+      "updateTime": "",
+      "status": "",
+      "merchantId": 1001,
+      "merchantName": "商户1号",
+      "groupId": 1
+    }, {
+      "id": 18,
+      "content": "编辑拼团商品",
+      "createTime": "2019-02-25 21:17:33",
+      "updateTime": "",
+      "status": "",
+      "merchantId": 1001,
+      "merchantName": "商户1号",
+      "groupId": 1
+    }, {
+      "id": 19,
+      "content": "下架拼团商品",
+      "createTime": "2019-03-07 22:37:42",
+      "updateTime": "",
+      "status": "",
+      "merchantId": 1001,
+      "merchantName": "商户1号",
+      "groupId": 1
+    }, {
+      "id": 29,
+      "content": "上架拼团商品",
+      "createTime": "2019-04-23 23:46:15",
+      "updateTime": "",
+      "status": "",
+      "merchantId": 1001,
+      "merchantName": "商户1号",
+      "groupId": 1
+    }, {
+      "id": 30,
+      "content": "下架拼团商品",
+      "createTime": "2019-04-23 23:46:16",
+      "updateTime": "",
+      "status": "",
+      "merchantId": 1001,
+      "merchantName": "商户1号",
+      "groupId": 1
+    }, {
+      "id": 31,
+      "content": "编辑拼团商品",
+      "createTime": "2019-06-17 09:45:15",
+      "updateTime": "",
+      "status": "",
+      "merchantId": 1001,
+      "merchantName": "商户1号",
+      "groupId": 1
+    }],
+    "imgUrl": ""
+  }
+}

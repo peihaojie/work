@@ -1,0 +1,19 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "currentPage": 1,
+    "pageSize": 10,
+    "totalPage": 1,
+    "totalCount": 5,
+    "list": [{
+      "id": 4,
+      "logContent": "后台操作取消拼团",
+      "operator": "商户1号",
+      "merchantId": "1001",
+      "createTime": "2018-12-14 11:15:02",
+      "groupManageId": 1
+    }],
+    "imgUrl": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "currentPage": 1,
+    "pageSize": 10,
+    "totalPage": 1,
+    "totalCount": 1,
+    "list": [{
+      "id": 10,
+      "goodsName": "心上人cxb",
+      "assembleState": 4,
+      "groupSpec": 2,
+      "groupPrice": 0.01,
+      "groupNum": 1,
+      "commanderName": "xky",
+      "invitationTimes": 10,
+      "createTime": "2018-12-20 16:04:41",
+      "merchantId": "1001",
+      "remark1": "1",
+      "remark2": "276"
+    }],
+    "imgUrl": ""
+  }
+}

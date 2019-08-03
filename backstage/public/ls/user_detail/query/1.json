@@ -1,0 +1,34 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "evaluation": 7,
+    "return_record": 0,
+    "login_count": 1,
+    "order_count": 1,
+    "addressList": [{
+      "id": 6,
+      "userId": 1,
+      "merchantId": "1001",
+      "userName": "asdfff",
+      "phone": "15627236892",
+      "address": "河南省郑州市中原区asfffffff",
+      "postalCode": "",
+      "defaultState": 2,
+      "createTime": "2018-11-22 10:14:14",
+      "updateTime": "2018-11-24 10:09:17"
+    }],
+    "consumption": "",
+    "collection": 2,
+    "user": {
+      "id": 1,
+      "mobilePhone": "13820748671",
+      "realName": "Smile Boyゾ",
+      "sex": 1,
+      "birthday": 20181120,
+      "createTime": "2018-11-01 16:10:41",
+      "remark2": "https://wx.qlogo.cn/mmopen/vi_32/mTmoQxZnxicicqb15icFOLXZBf3nUkwPmIKy7KK3kQYmIPSSub0bHHB8eD6ZbsqOqVicvz5B7wZAfWcGgOj4Xic0btw/132",
+      "remark5": "广东省深圳市福田区",
+    }
+  }
+}

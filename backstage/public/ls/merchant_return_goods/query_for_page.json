@@ -1,0 +1,12 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "currentPage": 1,
+    "pageSize": 10,
+    "totalPage": 0,
+    "totalCount": 0,
+    "list": [],
+    "imgUrl": ""
+  }
+}

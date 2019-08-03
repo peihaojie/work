@@ -1,0 +1,89 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "currentPage": 1,
+    "pageSize": 10,
+    "totalPage": 1,
+    "totalCount": 7,
+    "list": [{
+      "id": 1,
+      "styleName": "上衣2",
+      "merchantId": "1001",
+      "propertyNum": 5,
+      "updateTime": "2019-01-25 17:22:27",
+      "updator": 1001,
+      "creator": 1001,
+      "createTime": "2018-11-14 16:48:25",
+      "status": 0,
+      "paramNum": 3
+    }, {
+      "id": 2,
+      "styleName": "笔记本电脑",
+      "merchantId": "1001",
+      "propertyNum": 6,
+      "updateTime": "2019-01-13 22:48:40",
+      "updator": 1001,
+      "creator": 1001,
+      "createTime": "2018-11-15 17:29:43",
+      "status": 0,
+      "paramNum": 1
+    }, {
+      "id": 5,
+      "styleName": "早餐",
+      "merchantId": "1001",
+      "propertyNum": 3,
+      "updateTime": "2018-11-22 19:08:51",
+      "updator": 1001,
+      "creator": 1001,
+      "createTime": "2018-11-22 19:08:46",
+      "status": 0,
+      "paramNum": 4
+    }, {
+      "id": 11,
+      "styleName": "古董",
+      "merchantId": "1001",
+      "propertyNum": 0,
+      "updateTime": "",
+      "updator": "",
+      "creator": 1001,
+      "createTime": "2019-02-16 14:48:52",
+      "status": 0,
+      "paramNum": 0
+    }, {
+      "id": 12,
+      "styleName": "订单",
+      "merchantId": "1001",
+      "propertyNum": 0,
+      "updateTime": "",
+      "updator": "",
+      "creator": 1001,
+      "createTime": "2019-02-21 21:27:54",
+      "status": 0,
+      "paramNum": 0
+    }, {
+      "id": 13,
+      "styleName": "鹅鹅鹅饿",
+      "merchantId": "1001",
+      "propertyNum": 0,
+      "updateTime": "",
+      "updator": "",
+      "creator": 1001,
+      "createTime": "2019-02-24 16:51:32",
+      "status": 0,
+      "paramNum": 0
+    }, {
+      "id": 14,
+      "styleName": "czx",
+      "merchantId": "1001",
+      "propertyNum": 0,
+      "updateTime": "",
+      "updator": "",
+      "creator": 1001,
+      "createTime": "2019-03-30 15:13:11",
+      "status": 0,
+      "paramNum": 0
+    }],
+    "imgUrl": ""
+  }
+}

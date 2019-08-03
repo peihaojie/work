@@ -1,0 +1,8 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "imgUrl": "http://xxxx/img",
+    "image": "/ls/1001/merchant/100120190617091933.png"
+  }
+}

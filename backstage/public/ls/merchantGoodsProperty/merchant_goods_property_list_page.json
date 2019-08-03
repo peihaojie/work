@@ -1,0 +1,52 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "currentPage": 1,
+    "pageSize": 100,
+    "totalPage": 1,
+    "totalCount": 2,
+    "list": [{
+      "id": 15,
+      "propertyName": "1",
+      "styleId": "",
+      "propertySelect": 1,
+      "filterMode": "",
+      "propertyMode": "",
+      "propertyList": "棉",
+      "propertyOrder": 1,
+      "propertyStyle": "",
+      "merchantId": "",
+      "propertySearch": "",
+      "handsAdd": "",
+      "associate": "",
+      "createTime": "",
+      "updateTime": "",
+      "creator": "",
+      "status": "",
+      "updator": "",
+      "styleName": "上衣2"
+    }, {
+      "id": 3,
+      "propertyName": "尺码",
+      "styleId": "",
+      "propertySelect": 1,
+      "filterMode": "",
+      "propertyMode": "",
+      "propertyList": "S,M,L,XL",
+      "propertyOrder": 1,
+      "propertyStyle": "",
+      "merchantId": "",
+      "propertySearch": "",
+      "handsAdd": "",
+      "associate": "",
+      "createTime": "",
+      "updateTime": "",
+      "creator": "",
+      "status": "",
+      "updator": "",
+      "styleName": "上衣2"
+    }],
+    "imgUrl": ""
+  }
+}

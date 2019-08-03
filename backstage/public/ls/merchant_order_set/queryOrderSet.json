@@ -1,0 +1,13 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "id": 1,
+    "seckillEndpayTime": 60,
+    "normalEndpayTime": 3,
+    "sendEndTime": 2,
+    "finalEndTime": 3,
+    "merchantId": "1001",
+    "commentEndTime": 5
+  }
+}

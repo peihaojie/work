@@ -1,0 +1,19 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "currentPage": 1,
+    "pageSize": 10,
+    "totalPage": 1,
+    "totalCount": 1,
+    "list": [{
+      "id": 7,
+      "returnPname": "对方告诉对方",
+      "returnName": "苏打粉",
+      "returnAddress": "阿斯顿发",
+      "returnPhone": "13822222222",
+      "merchantId": "1001"
+    }],
+    "imgUrl": ""
+  }
+}

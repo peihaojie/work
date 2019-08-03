@@ -1,0 +1,18 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "allOrder": 14,
+    "nearlySevenDaysOrderMoney": 0.0,
+    "ywc": 0,
+    "yesterdayOrderMoney": 0.0,
+    "ygb": 9,
+    "todayOrderMoney": 0.0,
+    "dfh": 0,
+    "dfk": 0,
+    "dsh": 0,
+    "todayOrderNum": 0,
+    "dcltk": 0,
+    "dqrth": 0
+  }
+}

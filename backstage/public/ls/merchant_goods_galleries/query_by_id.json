@@ -1,0 +1,18 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "id": 2,
+    "merchantId": "test",
+    "name": "修改",
+    "cover": "http://127.0.0.1:8081/图片地址",
+    "code": "ea170f979f1741cf90e7d1046bc4db0d",
+    "description": "不能大于100",
+    "sorting": 22,
+    "status": 10,
+    "creator": 1,
+    "createTime": "2018-11-12 13:43:55",
+    "updator": 1,
+    "updateTime": "2018-11-12 14:06:22"
+  }
+}

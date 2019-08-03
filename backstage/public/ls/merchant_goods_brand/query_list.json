@@ -1,0 +1,39 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": [{
+    "id": 9,
+    "code": "a695be93a2454da59c8987ceb7d839b8",
+    "merchantId": "1001",
+    "name": "品牌dior",
+    "firstChar": "P",
+    "logo": "http://47.107.167.164/img/ls/1001/merchant/100120190125200213.jpg",
+    "areaLogo": "",
+    "sorting": 123,
+    "isShow": 1,
+    "story": "",
+    "isManufacturer": 1,
+    "status": 10,
+    "creator": 1,
+    "createTime": "2018-11-13 18:53:44",
+    "updator": 1,
+    "updateTime": "2019-05-10 18:34:16"
+  }, {
+    "id": 1,
+    "code": "0591604f5e02498d91325b9286409ba2",
+    "merchantId": "1001",
+    "name": "baidu",
+    "firstChar": "D",
+    "logo": "baidu",
+    "areaLogo": "baidu",
+    "sorting": 100,
+    "isShow": 1,
+    "story": "",
+    "isManufacturer": 1,
+    "status": 10,
+    "creator": 1,
+    "createTime": "2018-11-10 17:40:00",
+    "updator": 1,
+    "updateTime": "2019-04-02 11:03:47"
+  }]
+}

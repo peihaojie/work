@@ -1,0 +1,10 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "monthAddUserCount": 0,
+    "yesterdayAddUserCount": 0,
+    "allUserCount": 4,
+    "todayAddUserCount": 0
+  }
+}

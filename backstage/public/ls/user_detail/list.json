@@ -1,0 +1,19 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "currentPage": 1,
+    "pageSize": 5,
+    "totalPage": 1,
+    "totalCount": 5,
+    "list": [{
+      "id": 1,
+      "userName": "testName",
+      "mobilePhone": 123456789,
+      "createTime": "2018-01-01 11:01:01",
+      "headImg": "http://xxxxxxxxxxxx",
+      "openId": "dadad64646ada"
+    }],
+    "imgUrl": ""
+  }
+}

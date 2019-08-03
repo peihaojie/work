@@ -1,0 +1,106 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "id": 112,
+    "goodsName": "NOKIAN9",
+    "goodsSubtitle": "N9更牛逼",
+    "goodsDesc": "Nokia 10年打造 匠心营造",
+    "marketPrice": "1000",
+    "goodsPrice": 1000,
+    "goodsNo": "NokiaN9",
+    "goodsLabel": "",
+    "goodsImg": "",
+    "goodsMobileImg": "",
+    "goodsSort": "",
+    "goodsSize": "",
+    "goodsColor": "",
+    "goodsSalePrice": "",
+    "barCode": "",
+    "skuCode": "",
+    "goodsWarningVal": "",
+    "goodsStock": 100,
+    "goodsWeight": "500g",
+    "applicablePeople": "",
+    "mainMaterial": "",
+    "listingYear": "",
+    "goodsUnit": "部",
+    "goodsObject": "",
+    "goodsNum": "",
+    "goodsWarning": 10,
+    "delStatus": 0,
+    "status": 1,
+    "brandId": 21,
+    "styleId": 8,
+    "typeId": 29,
+    "merchantId": "1001",
+    "salesNum": "",
+    "commentId": "",
+    "createTime": "2019-01-07 18:44:29",
+    "updateTime": "",
+    "creator": 1,
+    "goodsNavigationId": 92,
+    "updator": "",
+    "merchantParamDetailIds": {
+      "id": "",
+      "goodsId": "",
+      "paramDetailId": "",
+      "paramObject": "全部适用",
+      "mainMaterial": "钛合金",
+      "merchantParamDetails": [{
+          "id": "",
+          "paramDetailName": "分辨率",
+          "specificationsValue": "1080",
+          "goodsId": "",
+          "skuId": "",
+          "styleId": ""
+        },
+        {
+          "id": "",
+          "paramDetailName": "颜色",
+          "specificationsValue": "黑",
+          "goodsId": "",
+          "skuId": "",
+          "styleId": ""
+        }
+      ]
+    },
+    "merchantGoodsTypePropertyList": [{
+      "id": 283,
+      "goodsId": 112,
+      "propertyId": "",
+      "specificationsId": "598",
+      "goodsSalePrice": 1000,
+      "goodsNo": "NokiaN9",
+      "goodsStock": 100,
+      "stockWarning": "10",
+      "skuCode": "91a238f309ea49498680803fb8899137",
+      "status": 0,
+      "creator": 1,
+      "updator": "",
+      "nameValue": [{
+        "name": "Nokia",
+        "value": "5.0"
+      }]
+    }],
+    "merchantGoodsParams": "",
+    "merchantGoodsProperties": "",
+    "merchantSpecifications": "",
+    "brandName": "",
+    "styleName": "",
+    "typeName": "",
+    "childId": "",
+    "childName": "",
+    "buyNum": "",
+    "map": [{
+      "name": "Nokia",
+      "value": [
+        "5.0"
+      ]
+    }],
+    "navName": "",
+    "navId": "",
+    "navChildName": "",
+    "navChildId": ""
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "msg": "返回成功",
+  "errno": "200",
+  "data": {
+    "currentPage": 1,
+    "pageSize": 10,
+    "totalPage": 1,
+    "totalCount": 4,
+    "list": [{
+      "id": 10,
+      "merchantId": "1001",
+      "name": "sagqw",
+      "cover": "http://47.107.167.164/img/ls/1001/merchant/100120190128162954.jpg",
+      "code": "2f837fa89b97429885d375887fe2d29a",
+      "description": "3333",
+      "sorting": 2,
+      "status": "",
+      "creator": "",
+      "createTime": "2019-01-28 16:29:56",
+      "updator": "",
+      "updateTime": "",
+      "imgTotal": 1
+    }, {
+      "id": 7,
+      "merchantId": "1001",
+      "name": "bman",
+      "cover": "http://47.107.167.164/img/ls/1001/merchant/100120190128110426.jpg",
+      "code": "626be599e479426986d098b0f32e634d",
+      "description": "l;kmsf",
+      "sorting": 333,
+      "status": "",
+      "creator": "",
+      "createTime": "2019-01-28 10:59:23",
+      "updator": "",
+      "updateTime": "",
+      "imgTotal": 4
+    }, {
+      "id": 6,
+      "merchantId": "1001",
+      "name": "相册2",
+      "cover": "http://47.107.167.164/img/ls/1001/merchant/100120190116203219.jpg",
+      "code": "f2353da08da04e5896f6f78e040c8082",
+      "description": "12",
+      "sorting": 1,
+      "status": "",
+      "creator": "",
+      "createTime": "2018-11-14 14:40:14",
+      "updator": "",
+      "updateTime": "",
+      "imgTotal": 5
+    }, {
+      "id": 5,
+      "merchantId": "1001",
+      "name": "相册1",
+      "cover": "https://img.xinzhibang168.com/FmR88ILyONmakl5P1khxHlEt3qxc.jpg",
+      "code": "4bc1d224260c4fd49ef8ad194384b191",
+      "description": "2",
+      "sorting": 1,
+      "status": "",
+      "creator": "",
+      "createTime": "2018-11-13 19:41:12",
+      "updator": "",
+      "updateTime": "",
+      "imgTotal": 4
+    }],
+    "imgUrl": "http://47.107.167.164/img"
+  }
+}
